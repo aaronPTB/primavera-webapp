@@ -20,6 +20,7 @@ html, body{
 .panel.output {
   height: 90vh;
   width: 90vh;
+  padding: 5%;
 }
 
 .result-view {
