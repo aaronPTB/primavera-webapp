@@ -15,9 +15,10 @@ def run():
     '''takes posts to /submit and runs it through primavera'''
 
     print(request.form)
+    print(request.files)
 
     error = None
-    image = request.form['image']
+    image = request.files['image']
     palette = request.form['palette']
     numcolors = request.form['colors']
     overshoot = request.form['overshoot']
