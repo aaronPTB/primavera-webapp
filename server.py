@@ -19,10 +19,12 @@ def run():
     error = None
     image = request.form['image']
     palette = request.form['palette']
-    palette = request.form['colors']
-    palette = request.form['overshoot']
-    palette = request.form['palette']
+    numcolors = request.form['colors']
+    overshoot = request.form['overshoot']
+    merge = request.form['merge']
 
     print(image)
-    primavera_output = primavera(image,)
+    primavera_output = primavera(image=image, colors=palette,
+                                 palette_size=numcolors, overshoot=overshoot,
+                                 merge=merge)
     return {primavera_output}
