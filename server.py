@@ -14,9 +14,15 @@ def home():
 def run():
     '''takes posts to /submit and runs it through primavera'''
 
-    error = None
-    metadata = request.form['metadata']
-    image = request.form['image']
+    print(request.form)
 
-    #primavera_output = primavera({...})
+    error = None
+    image = request.form['image']
+    palette = request.form['palette']
+    palette = request.form['colors']
+    palette = request.form['overshoot']
+    palette = request.form['palette']
+
+    print(image)
+    primavera_output = primavera(image,)
     return {primavera_output}

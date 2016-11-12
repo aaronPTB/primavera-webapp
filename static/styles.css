@@ -10,17 +10,18 @@ html, body{
 
 .panel {
   background-color: #AAAAAA;
+  box-sizing: border-box;
 }
 
 .panel.settings {
     height: 90vh;
     width: calc(100vw - 90vh - 80px);
+    padding: 5%;
 }
 
 .panel.output {
   height: 90vh;
   width: 90vh;
-  padding: 5%;
 }
 
 .result-view {

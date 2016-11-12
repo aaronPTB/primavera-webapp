@@ -4,21 +4,21 @@
   </head>
   <body>
     <div class='panel settings'>
-      <form action='submit' method='POST'>
-        image: <input type='file' accept='image/*' name='image'>
-        colors: <input type='range' max=20 min=1 name='colors'>
-        dither: <input type='checkbox' name='dither'>
+      <form action='submit' method='POST' style='diplay: inline;'>
+        image: <input type='file' accept='image/*' name='image'><br>
+        colors: <input type='range' max=20 min=1 name='colors'><br>
+        dither: <input type='checkbox' name='dither'><br>
         palette: <select name='palette'>
           <option value='RGB'>red, green, blue</option>
           <option value='CMYK'>cyan, magenta, yellow</option>
           <option value='montana'>spray paint</option>
           <option value='BW'>black, white</option>
-        </select>
+        </select><br>
 
-        Other Options:
-        overshoot: <input type='range' min=1 max=5 name='overshoot'>
-        merge-off: <input type='checkbox' name='merge'>
-        merge-two: <input type='checkbox' name='quick'>
+        Other Options:<br>
+        overshoot: <input type='range' min=1 max=5 name='overshoot'><br>
+        merge-off: <input type='checkbox' name='merge'><br>
+        merge-two: <input type='checkbox' name='quick'><br>
         <input type='submit' name='submit'>
       </form>
     </div>
