@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel='stylesheet' href="/static/styles.css" type='text/css'>
+  </head>
+  <body>
+    <div class='panel settings'>
+      <form action='submit' method='POST'>
+        image: <input type='file' accept='image/*' name='image'>
+        colors: <input type='range' max=20 min=1 name='colors'>
+        dither: <input type='checkbox' name='dither'>
+        palette: <select name='palette'>
+          <option value='RGB'>red, green, blue</option>
+          <option value='CMYK'>cyan, magenta, yellow</option>
+          <option value='montana'>spray paint</option>
+          <option value='BW'>black, white</option>
+        </select>
+
+        Other Options:
+        overshoot: <input type='range' min=1 max=5 name='overshoot'>
+        merge-off: <input type='checkbox' name='merge'>
+        merge-two: <input type='checkbox' name='quick'>
+        <input type='submit' name='submit'>
+      </form>
+    </div>
+    <div class='panel output'>
+      <img class='result-view' src=''>
+    </div>
+  </body>
+</html>
