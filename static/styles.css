@@ -2,4 +2,28 @@ html, body{
   padding: 0px;
   margin: 0px;
   background-color: #DDDDDD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.panel {
+  background-color: #AAAAAA;
+}
+
+.panel.settings {
+    height: 90vh;
+    width: calc(100vw - 90vh - 80px);
+}
+
+.panel.output {
+  height: 90vh;
+  width: 90vh;
+}
+
+.result-view {
+  height: 90%;
+  width: 90%;
+  margin: 5%;
 }
