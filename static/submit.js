@@ -11,7 +11,7 @@ $(document).ready(function() {
         data: myform,
         processData: false,
         contentType: false,
-        async: false,
+        //async: false,
         cache: false,
         success:function(response) {
           $("#output").attr('src', response.img)
