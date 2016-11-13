@@ -14,10 +14,10 @@ def home():
     return render_template("index.html");
 
 
-palette_locations = {'RGB': 'primavera/rgb.json',
-                     'BW': 'primavera/bw.json',
-                     'CMYK': 'primavera/cmyk.json',
-                     'Montana': 'primavera/montana.json'}
+palette_locations = {'RGB': 'primavera/palettes/rgb.json',
+                     'BW': 'primavera/palettes/bw.json',
+                     'CMYK': 'primavera/palettes/cmyk.json',
+                     'Montana': 'primavera/palettes/montana.json'}
 
 @app.route("/submit",methods=["POST"])
 def queue_run():
