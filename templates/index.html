@@ -1,11 +1,12 @@
 <html>
   <head>
     <link rel='stylesheet' href="/static/styles.css" type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src='static/submit.js'></script>
   </head>
   <body>
     <div class='panel settings'>
-      <form action='submit' method='POST' style='diplay: inline;'
-            method="post" enctype="multipart/form-data">
+      <form style='diplay: inline;' id="primavera-form" enctype="multipart/form-data">
         image: <input type='file' accept='image/*' name='image'><br>
         colors: <input type='range' max=20 min=1 name='colors'><br>
         dither: <select name='dither'><br>
@@ -23,11 +24,11 @@
         overshoot: <input type='range' min=1 max=5 name='overshoot'><br>
         merge-off: <input type='checkbox' name='merge'><br>
         merge-two: <input type='checkbox' name='quick'><br>
-        <input type='submit' name='submit'>
+        <input type='submit' name='submit' value='Send'>
       </form>
     </div>
     <div class='panel output'>
-      <img class='result-view' src=''>
+      <img id='output' class='result-view' src=''>
     </div>
   </body>
 </html>
