@@ -36,14 +36,13 @@ def queue_run():
     merge = None
 
     if dither == 'None': dither = None
-    if palette != 'primavera/montana.json': entire = True
+    if palette != 'primavera/palettes/montana.json': entire = True
     if 'merge' in request.form: merge = request.form['merge']
 
     save_name = str(time())
     file_path = 'primavera/process_queue/'+save_name+'.jpg'
     image.save(file_path)
 
-    print(dither)
     primavera_output = primavera(image=file_path, colors=palette,
                                  palette_size=numcolors, overshoot=overshoot,
                                  merge=merge, dither=dither, entire=entire)
