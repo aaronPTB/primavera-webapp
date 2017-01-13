@@ -15,10 +15,10 @@ def home():
     return render_template("index.html");
 
 
-palette_locations = {'RGB': 'primavera/palettes/rgb.json',
-                     'BW': 'primavera/palettes/bw.json',
-                     'CMYK': 'primavera/palettes/cmyk.json',
-                     'Montana': 'primavera/palettes/montana.json'}
+palette_locations = {'RGB': 'primavera/primavera/palettes/rgb.json',
+                     'BW': 'primavera/primavera/palettes/bw.json',
+                     'CMYK': 'primavera/primavera/palettes/cmyk.json',
+                     'Montana': 'primavera/primavera/palettes/montana.json'}
 
 @app.route("/submit",methods=["POST"])
 def queue_run():
@@ -54,3 +54,5 @@ def queue_run():
         data_uri = data_uri_header + data_uri_content
         os.remove(file_path)
         return jsonify(**{'img': data_uri})
+
+app.run(port=80,host='0.0.0.0')
