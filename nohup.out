@@ -23,3 +23,113 @@ Traceback (most recent call last):
     dst = open(dst, 'wb')
 FileNotFoundError: [Errno 2] No such file or directory: 'primavera/process_queue/1484275418.2831154.jpg'
 66.112.227.7 - - [13/Jan/2017 02:43:38] "POST /submit HTTP/1.1" 500 -
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+66.112.227.7 - - [13/Jan/2017 03:39:47] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:41:59] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:41:59] "GET /static/styles.css HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:41:59] "GET /static/submit.js HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:42:02] "GET /favicon.ico HTTP/1.1" 404 -
+173.174.115.198 - - [13/Jan/2017 03:44:05] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:44:19] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:44:24] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:44:52] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:45:10] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:45:12] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:45:15] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:46:42] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:47:19] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:52:24] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:53:13] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:53:27] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:53:55] "POST /submit HTTP/1.1" 200 -
+66.112.227.7 - - [13/Jan/2017 03:54:28] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:58:40] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:58:51] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:59:03] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:59:14] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:59:25] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:59:38] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:59:49] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:59:49] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 03:59:49] "GET /static/styles.css HTTP/1.1" 304 -
+173.174.115.198 - - [13/Jan/2017 03:59:49] "GET /static/submit.js HTTP/1.1" 304 -
+173.174.115.198 - - [13/Jan/2017 04:02:26] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:02:34] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:13:17] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:13:26] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:13:30] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:13:37] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:13:43] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:14:51] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:15:49] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:16:48] "POST /submit HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "server.py", line 9, in <module>
+    from primavera.primavera.primavera import primavera
+ImportError: No module named primavera.primavera.primavera
+173.174.115.198 - - [13/Jan/2017 04:17:46] "POST /submit HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "server.py", line 58, in <module>
+    app.run(port=80,host='0.0.0.0')
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 708, in run_simple
+    inner()
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 670, in inner
+    fd=fd)
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 564, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 476, in __init__
+    HTTPServer.__init__(self, (host, int(port)), handler)
+  File "/usr/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+173.174.115.198 - - [13/Jan/2017 04:18:46] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:02] "POST /submit HTTP/1.1" 200 -
+66.112.227.7 - - [13/Jan/2017 04:19:02] "GET / HTTP/1.1" 200 -
+66.112.227.7 - - [13/Jan/2017 04:19:02] "GET / HTTP/1.1" 200 -
+66.112.227.7 - - [13/Jan/2017 04:19:02] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:02] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:19] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:35] "POST /submit HTTP/1.1" 200 -
+66.112.227.7 - - [13/Jan/2017 04:19:35] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:51] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:51] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:51] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:19:51] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:21:31] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:21:53] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:22:10] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:22:26] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:22:26] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:22:26] "GET /static/styles.css HTTP/1.1" 304 -
+173.174.115.198 - - [13/Jan/2017 04:22:26] "GET /static/submit.js HTTP/1.1" 304 -
+173.174.115.198 - - [13/Jan/2017 04:22:38] "GET / HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:22:38] "GET /static/styles.css HTTP/1.1" 304 -
+173.174.115.198 - - [13/Jan/2017 04:22:38] "GET /static/submit.js HTTP/1.1" 304 -
+173.174.115.198 - - [13/Jan/2017 04:23:09] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:23:56] "POST /submit HTTP/1.1" 200 -
+173.174.115.198 - - [13/Jan/2017 04:24:54] "POST /submit HTTP/1.1" 200 -
+108.132.232.197 - - [13/Jan/2017 08:49:51] "GET / HTTP/1.0" 200 -
+75.1.137.203 - - [13/Jan/2017 09:04:23] "GET / HTTP/1.1" 200 -
+75.1.137.203 - - [13/Jan/2017 09:04:23] "GET /static/styles.css HTTP/1.1" 200 -
+75.1.137.203 - - [13/Jan/2017 09:04:23] "GET /static/submit.js HTTP/1.1" 200 -
+75.1.137.203 - - [13/Jan/2017 09:04:24] "GET /favicon.ico HTTP/1.1" 404 -
+207.98.198.17 - - [13/Jan/2017 15:33:33] "GET / HTTP/1.0" 200 -
+207.98.198.17 - - [13/Jan/2017 15:33:41] "GET / HTTP/1.0" 200 -
+114.35.12.33 - - [13/Jan/2017 23:23:48] "GET / HTTP/1.0" 200 -
+222.186.34.119 - - [14/Jan/2017 01:41:18] code 400, message Bad request version ('xwÃ|hRIw¿n/hZ\x00\x00pÀ0À,À2À.À/À+À1À-\x00£\x00\x9f\x00¢\x00\x9eÀ(À$À\x14À')
+222.186.34.119 - - [14/Jan/2017 01:41:18] "  üÒÌWaCv÷\FèÖkÃ_xwÃ|hRIw¿n/hZ  pÀ0À,À2À.À/À+À1À- £  ¢ À(À$ÀÀ" HTTPStatus.BAD_REQUEST -
+85.74.154.89 - - [14/Jan/2017 01:44:20] "GET / HTTP/1.0" 200 -
+59.56.110.159 - - [14/Jan/2017 08:17:57] "GET / HTTP/1.1" 200 -
+52.78.96.194 - - [14/Jan/2017 15:40:50] "GET /w00tw00t.at.ISC.SANS.DFind:) HTTP/1.1" 404 -
+207.244.162.11 - - [14/Jan/2017 19:22:20] "GET / HTTP/1.0" 200 -
+180.177.129.102 - - [14/Jan/2017 20:11:56] "GET / HTTP/1.0" 200 -
+128.62.67.97 - - [14/Jan/2017 20:37:39] "GET / HTTP/1.1" 200 -
+128.62.67.97 - - [14/Jan/2017 20:37:39] "GET /static/styles.css HTTP/1.1" 200 -
+128.62.67.97 - - [14/Jan/2017 20:37:39] "GET /static/submit.js HTTP/1.1" 200 -
+128.62.67.97 - - [14/Jan/2017 20:37:40] "GET /favicon.ico HTTP/1.1" 404 -

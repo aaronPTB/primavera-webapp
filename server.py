@@ -45,7 +45,8 @@ def queue_run():
 
     primavera_output = primavera(image=file_path, colors=palette,
                                  palette_size=numcolors, overshoot=overshoot,
-                                 merge=merge, dither=dither, entire=entire)
+                                 merge=merge, dither=dither, entire=entire,
+				 save_labels='out')
 
     with open("out.png", "rb") as output_image:
         img_data = output_image.read()
